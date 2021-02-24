@@ -2,10 +2,6 @@ arch:
   - amd64
   - ppc64le
 language: java
-jdk: openjdk11
-before_script:
-  - sudo apt update -y
-  - sudo apt-get install maven
-  - mvn --version
+dist: focal
 script:
   - mvn clean install
