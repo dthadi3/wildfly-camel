@@ -3,5 +3,7 @@ arch:
   - ppc64le
 language: java
 dist: focal
+before_script:
+  - mvn install wildfly-galleon-plugins@5.1.0
 script:
   - mvn clean install
