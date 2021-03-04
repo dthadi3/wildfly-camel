@@ -4,6 +4,8 @@ arch:
 language: java
 dist: focal
 before_script:
+  - sudo apt update
+  - sudo apt install antlr4-maven-plugin
   - mvn install wildfly-galleon-plugins@5.1.0
 script:
   - mvn clean install
